@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>🍊Clementine</title>
+    <style>
+      body {
+        font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+        margin: auto;
+        max-width: 500px;
+      }
+      h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 60px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        line-height: 50px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.53) 0 5px 7px 0;
+        display: inline-block;
+        filter: saturate(1);
+        margin: 3px;
+        width: 170px;
+      }
+      .bioText1 {
+        background: linear-gradient(to top right, #cf9f67, #da9d4e);
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.53) 0 5px 7px 0;
+        margin: 20px;
+        padding: 10px;
+      }
+      .bioText2 {
+        background: linear-gradient(to top right, #f9a8c2, #fcd8e3);
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.53) 0 5px 7px 0;
+        margin: 20px;
+        padding: 10px;
+        text-align: right;
+      }
+
+      strong {
+        color: #b306b4;
+      }
+      .giveATreat {
+        color: #b306b4;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .buttons {
+        text-align: center;
+      }
+      button {
+        background-color: #d7b65e;
+        border-radius: 25px;
+        border-style: hidden;
+        box-shadow: rgba(0, 0, 0, 0.27) 0 3px 3px 0;
+        height: 50px;
+        margin: 15px;
+        width: 150px;
+      }
+      button:hover {
+        background-color: orange;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+      hr {
+        border-color: green;
+        margin-top: 30px;
+        margin-right: 150px;
+        margin-left: 150px;
+      }
+      .amazonList {
+        text-align: center;
+      }
+      .gif {
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clementine</h1>
+    <h2>🍊 The Loaf of Love 🍊</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/001/390/original/306576CC-B27E-4359-9F1D-EA3C4714B4D2.jpg?1593483250"
+              alt="gray tabby cat sitting"
+            />
+          </td>
+          <td class="bioText1">
+            <p>
+              Clementine was adopted by her forever-family in early 2017. It
+              took her a while to warm up to her Mom, but the love she developed
+              with her Dad was instant. Once she felt comfortable with her new
+              home and family, she started putting on a bit of weight and
+              started looking more like a cat, and less like a kitten. Her
+              young-at-heart spirit stayed, and she taught herself how to play
+              fetch with small foam balls.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <td class="bioText2">
+            <p>
+              Her favorite color is <strong>pink</strong>, and favorite thing to
+              do is lie outside the warm sidewalk. She considers her Mom's
+              home-office her bedroom. When both of her parents are home, she
+              will always play favorites and choose to cuddle with her Dad.
+              Unlike some cats, she likes to be held, get kisses, and prefers to
+              be the center of attention whenever possible, which can sometimes
+              hard when her sister, Kiwi, is around.
+              <br />
+            </p>
+          </td>
+
+          <td>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/001/391/original/AA577C90-5172-4F5F-A0E6-D07FE641C598.jpg?1593483275"
+              alt="gray tabby cat with orange eyes posing in a headshot"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <span class="giveATreat"
+        >Being adorable, vocal, playful, and attentive to her humans is a lot of
+        work. Pick a <em>virtual treat</em> for Clementine to have below.
+      </span>
+    </p>
+    <div class="buttons">
+      <p>
+        <button class="treat">
+          Chicken Treat
+        </button>
+        🍊
+        <button class="scratch">
+          Belly Scratch
+        </button>
+      </p>
+    </div>
+    <hr />
+    <p class="amazonList">
+      Clementine's favorite things can be found
+      <a
+        href="https://www.amazon.com/hz/wishlist/ls/3U5HHJA4IVLG5?ref_=wl_share"
+        >here</a
+      >
+      for inspiration for your cuddly cat. <br />
+      <br />
+    </p>
+    <script>
+      function chickenTreat() {
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Clementine says,";
+        let h2 = document.querySelector("h2");
+        h2.innerHTML =
+          "YUM! Thanks new friend! 🧡 <br> <img class='gif' src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/001/388/original/ResizedP_20200623_1638151%282%29.gif?1593455831'>";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      let chickenTreatButton = document.querySelector(".treat");
+      chickenTreatButton.addEventListener("click", chickenTreat);
+      function bellyScratch() {
+        let answer = prompt(
+          "Are you sure? (Yes/No) Clementine only likes her belly scratched when she's sleepy."
+        );
+        answer = answer.toLocaleLowerCase();
+        answer = answer.trim();
+        if (answer === "yes") {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Clementine says,";
+          let h2 = document.querySelector("h2");
+          h2.innerHTML =
+            "Lucky for you I'm half asleep and love the extra attention. No bites for you today, new friend. 🧡 <br> <img class='gif' src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/001/387/original/ResizedP_20200624_2132531%281%29.gif?1593455812'>";
+        } else {
+          alert(
+            "Good call! She may be cute, but she can get feisty! Give Clementine a treat instead."
+          );
+        }
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      let bellyScratchButton = document.querySelector(".scratch");
+      bellyScratchButton.addEventListener("click", bellyScratch);
+    </script>
+  </body>
+</html>
